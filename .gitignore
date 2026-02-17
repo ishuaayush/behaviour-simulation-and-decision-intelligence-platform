@@ -1,0 +1,25 @@
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+.env
+.venv
+venv/
+env/
+
+# vscode
+.vscode/
+
+# system
+.DS_Store
+Thumbs.db
+
+# mysql dumps
+*.sql
+*.log
+
+# secrets
+config.ini
+credentials.json
