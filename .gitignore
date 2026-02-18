@@ -1,25 +1,67 @@
-# python
+# -----------------------------
+# Python
+# -----------------------------
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-*.sqlite3
-.env
-.venv
+*.egg-info/
+dist/
+build/
+
+# virtual environments
+.venv/
 venv/
 env/
 
-# vscode
+# -----------------------------
+# VS Code
+# -----------------------------
 .vscode/
 
-# system
+# -----------------------------
+# OS files
+# -----------------------------
 .DS_Store
 Thumbs.db
 
-# mysql dumps
-*.sql
+# -----------------------------
+# Logs
+# -----------------------------
+logs/
 *.log
 
-# secrets
+# -----------------------------
+# Secrets & configs
+# -----------------------------
+.env
+*.env
 config.ini
+config.yaml
+secrets.json
 credentials.json
+
+# -----------------------------
+# Experiment artifacts
+# -----------------------------
+outputs/
+artifacts/
+
+# -----------------------------
+# Generated datasets
+# -----------------------------
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# -----------------------------
+# Jupyter
+# -----------------------------
+.ipynb_checkpoints/
+
+# -----------------------------
+# Database dumps (not schema)
+# -----------------------------
+*.sql.bak
+*.dump
